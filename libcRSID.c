@@ -13,6 +13,7 @@
 #include "host/file.c"
 #include "host/audio.c"
 
+cRSID_C64instance cRSID_C64; //the only global object (for faster & simpler access than with struct-pointers, in some places)
 
 cRSID_C64instance* cRSID_init (unsigned short samplerate, unsigned short buflen) {
  static cRSID_C64instance* C64 = &cRSID_C64;

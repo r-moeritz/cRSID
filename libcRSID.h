@@ -16,7 +16,7 @@ typedef struct cRSID_CIAinstance cRSID_CIAinstance;
 typedef struct cRSID_VICinstance cRSID_VICinstance;
 
 
-cRSID_C64instance cRSID_C64; //the only global object (for faster & simpler access than with struct-pointers, in some places)
+extern cRSID_C64instance cRSID_C64; //the only global object (for faster & simpler access than with struct-pointers, in some places)
 
 
 // Main API functions (mainly in libcRSID.c)
